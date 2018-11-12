@@ -1,0 +1,8 @@
+prefix=/home/zer0/AGV_ws/devel
+
+Name: my_visp_test
+Description: Description of my_visp_test
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zer0/AGV_ws/devel/lib 
+Requires: 

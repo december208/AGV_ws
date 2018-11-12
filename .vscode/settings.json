@@ -1,0 +1,7 @@
+{
+    "C_Cpp.dimInactiveRegions": false,
+    "python.autoComplete.extraPaths": [
+        "/home/zer0/AGV_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/kinetic/lib/python2.7/dist-packages"
+    ]
+}
