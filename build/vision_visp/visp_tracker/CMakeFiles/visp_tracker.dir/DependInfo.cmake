@@ -33,12 +33,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/libusb-1.0"
   "/usr/include/OGRE"
   "/usr/include/ois"
+  "/home/zer0/AGV_ws/src/image_pipeline/image_proc/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/home/zer0/AGV_ws/src/vision_visp/visp_tracker/src/libvisp_tracker"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/zer0/AGV_ws/build/image_pipeline/image_proc/CMakeFiles/image_proc.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

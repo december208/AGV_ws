@@ -38,6 +38,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/zer0/AGV_ws/build/vision_visp/visp_bridge/CMakeFiles/visp_bridge.dir/DependInfo.cmake"
   "/home/zer0/AGV_ws/build/vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/DependInfo.cmake"
   "/home/zer0/AGV_ws/build/vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/DependInfo.cmake"
+  "/home/zer0/AGV_ws/build/image_pipeline/image_proc/CMakeFiles/image_proc.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

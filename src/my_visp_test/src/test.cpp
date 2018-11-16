@@ -17,7 +17,7 @@ int main(int argc, const char **argv)
   vpDetectorAprilTag::vpAprilTagFamily tagFamily = vpDetectorAprilTag::TAG_36h11;
   vpDetectorAprilTag::vpPoseEstimationMethod poseEstimationMethod = vpDetectorAprilTag::HOMOGRAPHY_VIRTUAL_VS;
   double tagSize = 0.0435;
-  float quad_decimate = 1.5;
+  float quad_decimate = 2;
   int nThreads = 10;
   std::string intrinsic_file = "/home/zer0/.ros/calibrayon.ini";
   std::string camera_name = "";
@@ -112,19 +112,21 @@ int main(int argc, const char **argv)
       
       std::vector<vpHomogeneousMatrix> cMo_vec;
       dynamic_cast<vpDetectorAprilTag *>(detector)->detect(I, tagSize, cam, cMo_vec);
+      vpDisplay::displayText(I, 20, 20, "Click to quit.", vpColor::red);
       
       for (size_t i = 0; i < cMo_vec.size(); i++) {
         vpDisplay::displayFrame(I, cMo_vec[i], cam, tagSize / 2, vpColor::none, 3);
       }
-      vpDisplay::displayText(I, 20, 20, "Click to quit.", vpColor::red);
+      
+      
+      if (vpDisplay::getClick(I, false))
+        break;
       t = vpTime::measureTimeMs() - t;
       time_vec.push_back(t);
       std::stringstream ss;
       ss << "Detection time: " << t << " ms for " << detector->getNbObjects() << " tags";
       vpDisplay::displayText(I, 40, 20, ss.str(), vpColor::red);
       vpDisplay::flush(I);
-      if (vpDisplay::getClick(I, false))
-        break;
     }
     std::cout << "Benchmark computation time" << std::endl;
     std::cout << "Mean / Median / Std: " << vpMath::getMean(time_vec) << " ms"

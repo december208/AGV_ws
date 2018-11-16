@@ -1,0 +1,8 @@
+prefix=/home/zer0/AGV_ws/devel
+
+Name: image_rotate
+Description: Description of image_rotate
+Version: 1.12.23
+Cflags: -I/home/zer0/AGV_ws/devel/include
+Libs: -L/home/zer0/AGV_ws/devel/lib 
+Requires: 

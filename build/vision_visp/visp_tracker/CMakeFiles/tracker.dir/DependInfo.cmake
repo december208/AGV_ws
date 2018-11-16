@@ -27,6 +27,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/libusb-1.0"
   "/usr/include/OGRE"
   "/usr/include/ois"
+  "/home/zer0/AGV_ws/src/image_pipeline/image_proc/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/home/zer0/AGV_ws/src/vision_visp/visp_tracker/src/libvisp_tracker"
   )

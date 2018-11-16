@@ -88,6 +88,17 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -121,17 +132,6 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -181,186 +181,6 @@ visp_tracker_client/fast:
 .PHONY : visp_tracker_client/fast
 
 # Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule
-
-# Convenience name for target.
-trackerNodelet: vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule
-
-.PHONY : trackerNodelet
-
-# fast build rule for target.
-trackerNodelet/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/build.make vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/build
-.PHONY : trackerNodelet/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/rule
-
-# Convenience name for target.
-visp_tracker_viewer: vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/rule
-
-.PHONY : visp_tracker_viewer
-
-# fast build rule for target.
-visp_tracker_viewer/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/build
-.PHONY : visp_tracker_viewer/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/tracker.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/tracker.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/tracker.dir/rule
-
-# Convenience name for target.
-tracker: vision_visp/visp_tracker/CMakeFiles/tracker.dir/rule
-
-.PHONY : tracker
-
-# fast build rule for target.
-tracker/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/tracker.dir/build.make vision_visp/visp_tracker/CMakeFiles/tracker.dir/build
-.PHONY : tracker/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/rule
-
-# Convenience name for target.
-visp_tracker_genpy: vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/rule
-
-.PHONY : visp_tracker_genpy
-
-# fast build rule for target.
-visp_tracker_genpy/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/build
-.PHONY : visp_tracker_genpy/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/rule
-
-# Convenience name for target.
-visp_tracker_gennodejs: vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/rule
-
-.PHONY : visp_tracker_gennodejs
-
-# fast build rule for target.
-visp_tracker_gennodejs/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/build
-.PHONY : visp_tracker_gennodejs/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_py: vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_gencfg: vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/rule
-
-# Convenience name for target.
-_visp_tracker_generate_messages_check_deps_KltSettings: vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/rule
-
-.PHONY : _visp_tracker_generate_messages_check_deps_KltSettings
-
-# fast build rule for target.
-_visp_tracker_generate_messages_check_deps_KltSettings/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/build.make vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/build
-.PHONY : _visp_tracker_generate_messages_check_deps_KltSettings/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/rule
-
-# Convenience name for target.
-visp_tracker_gencfg: vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/rule
-
-.PHONY : visp_tracker_gencfg
-
-# fast build rule for target.
-visp_tracker_gencfg/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/build
-.PHONY : visp_tracker_gencfg/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/rule
-
-# Convenience name for target.
-_visp_tracker_generate_messages_check_deps_KltPoint: vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/rule
-
-.PHONY : _visp_tracker_generate_messages_check_deps_KltPoint
-
-# fast build rule for target.
-_visp_tracker_generate_messages_check_deps_KltPoint/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/build.make vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/build
-.PHONY : _visp_tracker_generate_messages_check_deps_KltPoint/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_eus: vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_eus
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_eus/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_eus/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/rule
-
-# Convenience name for target.
-_visp_tracker_generate_messages_check_deps_MovingEdgeSettings: vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/rule
-
-.PHONY : _visp_tracker_generate_messages_check_deps_MovingEdgeSettings
-
-# fast build rule for target.
-_visp_tracker_generate_messages_check_deps_MovingEdgeSettings/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/build.make vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/build
-.PHONY : _visp_tracker_generate_messages_check_deps_MovingEdgeSettings/fast
-
-# Convenience name for target.
 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoints.dir/rule:
 	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoints.dir/rule
 .PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoints.dir/rule
@@ -376,94 +196,19 @@ _visp_tracker_generate_messages_check_deps_KltPoints/fast:
 .PHONY : _visp_tracker_generate_messages_check_deps_KltPoints/fast
 
 # Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_nodejs: vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+_visp_tracker_generate_messages_check_deps_MovingEdgeSettings: vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
+.PHONY : _visp_tracker_generate_messages_check_deps_MovingEdgeSettings
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/rule
-
-# Convenience name for target.
-_visp_tracker_generate_messages_check_deps_Init: vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/rule
-
-.PHONY : _visp_tracker_generate_messages_check_deps_Init
-
-# fast build rule for target.
-_visp_tracker_generate_messages_check_deps_Init/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/build.make vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/build
-.PHONY : _visp_tracker_generate_messages_check_deps_Init/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-visp_tracker_generate_messages_nodejs: vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/rule
-
-.PHONY : visp_tracker_generate_messages_nodejs
-
-# fast build rule for target.
-visp_tracker_generate_messages_nodejs/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/build
-.PHONY : visp_tracker_generate_messages_nodejs/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/rule
-
-# Convenience name for target.
-visp_tracker_gencpp: vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/rule
-
-.PHONY : visp_tracker_gencpp
-
-# fast build rule for target.
-visp_tracker_gencpp/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/build
-.PHONY : visp_tracker_gencpp/fast
-
-# Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/rule
-
-# Convenience name for target.
-_visp_tracker_generate_messages_check_deps_MovingEdgeSite: vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/rule
-
-.PHONY : _visp_tracker_generate_messages_check_deps_MovingEdgeSite
-
-# fast build rule for target.
-_visp_tracker_generate_messages_check_deps_MovingEdgeSite/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/build.make vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/build
-.PHONY : _visp_tracker_generate_messages_check_deps_MovingEdgeSite/fast
+_visp_tracker_generate_messages_check_deps_MovingEdgeSettings/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/build.make vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSettings.dir/build
+.PHONY : _visp_tracker_generate_messages_check_deps_MovingEdgeSettings/fast
 
 # Convenience name for target.
 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSites.dir/rule:
@@ -511,19 +256,49 @@ visp_tracker_genlisp/fast:
 .PHONY : visp_tracker_genlisp/fast
 
 # Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule
+vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/rule
 
 # Convenience name for target.
-visp_tracker: vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule
+visp_tracker_viewer: vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/rule
 
-.PHONY : visp_tracker
+.PHONY : visp_tracker_viewer
 
 # fast build rule for target.
-visp_tracker/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/build
-.PHONY : visp_tracker/fast
+visp_tracker_viewer/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_viewer.dir/build
+.PHONY : visp_tracker_viewer/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/tracker.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/tracker.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/tracker.dir/rule
+
+# Convenience name for target.
+tracker: vision_visp/visp_tracker/CMakeFiles/tracker.dir/rule
+
+.PHONY : tracker
+
+# fast build rule for target.
+tracker/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/tracker.dir/build.make vision_visp/visp_tracker/CMakeFiles/tracker.dir/build
+.PHONY : tracker/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/rule
+
+# Convenience name for target.
+visp_tracker_genpy: vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/rule
+
+.PHONY : visp_tracker_genpy
+
+# fast build rule for target.
+visp_tracker_genpy/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_genpy.dir/build
+.PHONY : visp_tracker_genpy/fast
 
 # Convenience name for target.
 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_TrackerSettings.dir/rule:
@@ -541,49 +316,49 @@ _visp_tracker_generate_messages_check_deps_TrackerSettings/fast:
 .PHONY : _visp_tracker_generate_messages_check_deps_TrackerSettings/fast
 
 # Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/rule
+vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule
 
 # Convenience name for target.
-visp_tracker_generate_messages_py: vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/rule
+visp_tracker: vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule
 
-.PHONY : visp_tracker_generate_messages_py
+.PHONY : visp_tracker
 
 # fast build rule for target.
-visp_tracker_generate_messages_py/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/build
-.PHONY : visp_tracker_generate_messages_py/fast
+visp_tracker/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/build
+.PHONY : visp_tracker/fast
 
 # Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/rule
+vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/rule
 
 # Convenience name for target.
-visp_tracker_generate_messages_eus: vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/rule
+_visp_tracker_generate_messages_check_deps_MovingEdgeSite: vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/rule
 
-.PHONY : visp_tracker_generate_messages_eus
+.PHONY : _visp_tracker_generate_messages_check_deps_MovingEdgeSite
 
 # fast build rule for target.
-visp_tracker_generate_messages_eus/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/build
-.PHONY : visp_tracker_generate_messages_eus/fast
+_visp_tracker_generate_messages_check_deps_MovingEdgeSite/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/build.make vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_MovingEdgeSite.dir/build
+.PHONY : _visp_tracker_generate_messages_check_deps_MovingEdgeSite/fast
 
 # Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/rule
+vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/rule
 
 # Convenience name for target.
-visp_tracker_generate_messages: vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/rule
+visp_tracker_gennodejs: vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/rule
 
-.PHONY : visp_tracker_generate_messages
+.PHONY : visp_tracker_gennodejs
 
 # fast build rule for target.
-visp_tracker_generate_messages/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/build
-.PHONY : visp_tracker_generate_messages/fast
+visp_tracker_gennodejs/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_gennodejs.dir/build
+.PHONY : visp_tracker_gennodejs/fast
 
 # Convenience name for target.
 vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_cpp.dir/rule:
@@ -601,19 +376,49 @@ visp_tracker_generate_messages_cpp/fast:
 .PHONY : visp_tracker_generate_messages_cpp/fast
 
 # Convenience name for target.
-vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+visp_tracker_generate_messages: vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_cpp
+.PHONY : visp_tracker_generate_messages
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make vision_visp/visp_tracker/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+visp_tracker_generate_messages/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages.dir/build
+.PHONY : visp_tracker_generate_messages/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/rule
+
+# Convenience name for target.
+_visp_tracker_generate_messages_check_deps_KltSettings: vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/rule
+
+.PHONY : _visp_tracker_generate_messages_check_deps_KltSettings
+
+# fast build rule for target.
+_visp_tracker_generate_messages_check_deps_KltSettings/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/build.make vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltSettings.dir/build
+.PHONY : _visp_tracker_generate_messages_check_deps_KltSettings/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/rule
+
+# Convenience name for target.
+visp_tracker_gencpp: vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/rule
+
+.PHONY : visp_tracker_gencpp
+
+# fast build rule for target.
+visp_tracker_gencpp/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencpp.dir/build
+.PHONY : visp_tracker_gencpp/fast
 
 # Convenience name for target.
 vision_visp/visp_tracker/CMakeFiles/visp_tracker_geneus.dir/rule:
@@ -644,6 +449,111 @@ visp_tracker_generate_messages_lisp: vision_visp/visp_tracker/CMakeFiles/visp_tr
 visp_tracker_generate_messages_lisp/fast:
 	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_lisp.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_lisp.dir/build
 .PHONY : visp_tracker_generate_messages_lisp/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/rule
+
+# Convenience name for target.
+_visp_tracker_generate_messages_check_deps_Init: vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/rule
+
+.PHONY : _visp_tracker_generate_messages_check_deps_Init
+
+# fast build rule for target.
+_visp_tracker_generate_messages_check_deps_Init/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/build.make vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_Init.dir/build
+.PHONY : _visp_tracker_generate_messages_check_deps_Init/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+visp_tracker_generate_messages_nodejs: vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/rule
+
+.PHONY : visp_tracker_generate_messages_nodejs
+
+# fast build rule for target.
+visp_tracker_generate_messages_nodejs/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_nodejs.dir/build
+.PHONY : visp_tracker_generate_messages_nodejs/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+visp_tracker_generate_messages_eus: vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/rule
+
+.PHONY : visp_tracker_generate_messages_eus
+
+# fast build rule for target.
+visp_tracker_generate_messages_eus/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_eus.dir/build
+.PHONY : visp_tracker_generate_messages_eus/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/rule
+
+# Convenience name for target.
+visp_tracker_generate_messages_py: vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/rule
+
+.PHONY : visp_tracker_generate_messages_py
+
+# fast build rule for target.
+visp_tracker_generate_messages_py/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/build
+.PHONY : visp_tracker_generate_messages_py/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/rule
+
+# Convenience name for target.
+_visp_tracker_generate_messages_check_deps_KltPoint: vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/rule
+
+.PHONY : _visp_tracker_generate_messages_check_deps_KltPoint
+
+# fast build rule for target.
+_visp_tracker_generate_messages_check_deps_KltPoint/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/build.make vision_visp/visp_tracker/CMakeFiles/_visp_tracker_generate_messages_check_deps_KltPoint.dir/build
+.PHONY : _visp_tracker_generate_messages_check_deps_KltPoint/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/rule
+
+# Convenience name for target.
+visp_tracker_gencfg: vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/rule
+
+.PHONY : visp_tracker_gencfg
+
+# fast build rule for target.
+visp_tracker_gencfg/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/build
+.PHONY : visp_tracker_gencfg/fast
+
+# Convenience name for target.
+vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule
+.PHONY : vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule
+
+# Convenience name for target.
+trackerNodelet: vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule
+
+.PHONY : trackerNodelet
+
+# fast build rule for target.
+trackerNodelet/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/build.make vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/build
+.PHONY : trackerNodelet/fast
 
 src/libvisp_tracker/callbacks.o: src/libvisp_tracker/callbacks.cpp.o
 
@@ -1005,42 +915,36 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... install/strip"
 	@echo "... install"
 	@echo "... visp_tracker_client"
-	@echo "... trackerNodelet"
-	@echo "... visp_tracker_viewer"
-	@echo "... tracker"
-	@echo "... visp_tracker_genpy"
-	@echo "... visp_tracker_gennodejs"
-	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... edit_cache"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... _visp_tracker_generate_messages_check_deps_KltSettings"
-	@echo "... install/local"
-	@echo "... visp_tracker_gencfg"
-	@echo "... _visp_tracker_generate_messages_check_deps_KltPoint"
-	@echo "... install/strip"
-	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... _visp_tracker_generate_messages_check_deps_MovingEdgeSettings"
 	@echo "... _visp_tracker_generate_messages_check_deps_KltPoints"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... _visp_tracker_generate_messages_check_deps_Init"
-	@echo "... visp_tracker_generate_messages_nodejs"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... visp_tracker_gencpp"
-	@echo "... _visp_tracker_generate_messages_check_deps_MovingEdgeSite"
+	@echo "... _visp_tracker_generate_messages_check_deps_MovingEdgeSettings"
 	@echo "... _visp_tracker_generate_messages_check_deps_MovingEdgeSites"
 	@echo "... visp_tracker_bag"
 	@echo "... visp_tracker_genlisp"
-	@echo "... visp_tracker"
+	@echo "... visp_tracker_viewer"
+	@echo "... tracker"
+	@echo "... visp_tracker_genpy"
 	@echo "... _visp_tracker_generate_messages_check_deps_TrackerSettings"
-	@echo "... visp_tracker_generate_messages_py"
-	@echo "... visp_tracker_generate_messages_eus"
-	@echo "... visp_tracker_generate_messages"
+	@echo "... visp_tracker"
+	@echo "... _visp_tracker_generate_messages_check_deps_MovingEdgeSite"
+	@echo "... visp_tracker_gennodejs"
 	@echo "... visp_tracker_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... visp_tracker_generate_messages"
+	@echo "... edit_cache"
+	@echo "... _visp_tracker_generate_messages_check_deps_KltSettings"
+	@echo "... visp_tracker_gencpp"
 	@echo "... visp_tracker_geneus"
 	@echo "... visp_tracker_generate_messages_lisp"
+	@echo "... _visp_tracker_generate_messages_check_deps_Init"
+	@echo "... visp_tracker_generate_messages_nodejs"
+	@echo "... visp_tracker_generate_messages_eus"
+	@echo "... visp_tracker_generate_messages_py"
+	@echo "... install/local"
+	@echo "... _visp_tracker_generate_messages_check_deps_KltPoint"
+	@echo "... visp_tracker_gencfg"
+	@echo "... trackerNodelet"
 	@echo "... src/libvisp_tracker/callbacks.o"
 	@echo "... src/libvisp_tracker/callbacks.i"
 	@echo "... src/libvisp_tracker/callbacks.s"
