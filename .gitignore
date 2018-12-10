@@ -1,0 +1,9 @@
+/build/*
+/devel/*
+/install/*
+/src/apriltag2_ros/*
+/src/cv_camera/*
+/src/image_pipeline/*
+/src/usb_cam/*
+/src/visp_ros/*
+/src/vision_visp/*

@@ -111,16 +111,6 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -132,6 +122,16 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -226,49 +226,34 @@ _run_tests_cv_camera/fast:
 .PHONY : _run_tests_cv_camera/fast
 
 # Convenience name for target.
-cv_camera/CMakeFiles/cv_camera_node.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/cv_camera_node.dir/rule
-.PHONY : cv_camera/CMakeFiles/cv_camera_node.dir/rule
+cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/rule
+.PHONY : cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/rule
 
 # Convenience name for target.
-cv_camera_node: cv_camera/CMakeFiles/cv_camera_node.dir/rule
+nodelet_generate_messages_py: cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/rule
 
-.PHONY : cv_camera_node
+.PHONY : nodelet_generate_messages_py
 
 # fast build rule for target.
-cv_camera_node/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/cv_camera_node.dir/build.make cv_camera/CMakeFiles/cv_camera_node.dir/build
-.PHONY : cv_camera_node/fast
+nodelet_generate_messages_py/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/build.make cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/build
+.PHONY : nodelet_generate_messages_py/fast
 
 # Convenience name for target.
-cv_camera/CMakeFiles/test_cv_camera.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/test_cv_camera.dir/rule
-.PHONY : cv_camera/CMakeFiles/test_cv_camera.dir/rule
+cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/rule
+.PHONY : cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-test_cv_camera: cv_camera/CMakeFiles/test_cv_camera.dir/rule
+bond_generate_messages_cpp: cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/rule
 
-.PHONY : test_cv_camera
+.PHONY : bond_generate_messages_cpp
 
 # fast build rule for target.
-test_cv_camera/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/test_cv_camera.dir/build.make cv_camera/CMakeFiles/test_cv_camera.dir/build
-.PHONY : test_cv_camera/fast
-
-# Convenience name for target.
-cv_camera/CMakeFiles/cv_camera_nodelet.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/cv_camera_nodelet.dir/rule
-.PHONY : cv_camera/CMakeFiles/cv_camera_nodelet.dir/rule
-
-# Convenience name for target.
-cv_camera_nodelet: cv_camera/CMakeFiles/cv_camera_nodelet.dir/rule
-
-.PHONY : cv_camera_nodelet
-
-# fast build rule for target.
-cv_camera_nodelet/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/cv_camera_nodelet.dir/build.make cv_camera/CMakeFiles/cv_camera_nodelet.dir/build
-.PHONY : cv_camera_nodelet/fast
+bond_generate_messages_cpp/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/build.make cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/build
+.PHONY : bond_generate_messages_cpp/fast
 
 # Convenience name for target.
 cv_camera/CMakeFiles/cv_camera.dir/rule:
@@ -286,94 +271,64 @@ cv_camera/fast:
 .PHONY : cv_camera/fast
 
 # Convenience name for target.
-cv_camera/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : cv_camera/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+.PHONY : cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_nodejs: cv_camera/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+nodelet_generate_messages_nodejs: cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_nodejs
+.PHONY : nodelet_generate_messages_nodejs
 
 # fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make cv_camera/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
+nodelet_generate_messages_nodejs/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
+.PHONY : nodelet_generate_messages_nodejs/fast
 
 # Convenience name for target.
-cv_camera/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-.PHONY : cv_camera/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/rule
+.PHONY : cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_eus: cv_camera/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+run_tests_cv_camera_rostest_test_cv_camera.test: cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_eus
+.PHONY : run_tests_cv_camera_rostest_test_cv_camera.test
 
 # fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make cv_camera/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
+run_tests_cv_camera_rostest_test_cv_camera.test/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/build.make cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/build
+.PHONY : run_tests_cv_camera_rostest_test_cv_camera.test/fast
 
 # Convenience name for target.
-cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/rule
-.PHONY : cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/rule
+cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+.PHONY : cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-_run_tests_cv_camera_rostest_test_no_yaml.test: cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/rule
+nodelet_generate_messages_lisp: cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
 
-.PHONY : _run_tests_cv_camera_rostest_test_no_yaml.test
+.PHONY : nodelet_generate_messages_lisp
 
 # fast build rule for target.
-_run_tests_cv_camera_rostest_test_no_yaml.test/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/build.make cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/build
-.PHONY : _run_tests_cv_camera_rostest_test_no_yaml.test/fast
+nodelet_generate_messages_lisp/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+.PHONY : nodelet_generate_messages_lisp/fast
 
 # Convenience name for target.
-cv_camera/CMakeFiles/roslint_cv_camera.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/roslint_cv_camera.dir/rule
-.PHONY : cv_camera/CMakeFiles/roslint_cv_camera.dir/rule
+cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+.PHONY : cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roslint_cv_camera: cv_camera/CMakeFiles/roslint_cv_camera.dir/rule
+bond_generate_messages_nodejs: cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule
 
-.PHONY : roslint_cv_camera
+.PHONY : bond_generate_messages_nodejs
 
 # fast build rule for target.
-roslint_cv_camera/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/roslint_cv_camera.dir/build.make cv_camera/CMakeFiles/roslint_cv_camera.dir/build
-.PHONY : roslint_cv_camera/fast
-
-# Convenience name for target.
-cv_camera/CMakeFiles/bond_generate_messages_py.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/bond_generate_messages_py.dir/rule
-.PHONY : cv_camera/CMakeFiles/bond_generate_messages_py.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_py: cv_camera/CMakeFiles/bond_generate_messages_py.dir/rule
-
-.PHONY : bond_generate_messages_py
-
-# fast build rule for target.
-bond_generate_messages_py/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/bond_generate_messages_py.dir/build.make cv_camera/CMakeFiles/bond_generate_messages_py.dir/build
-.PHONY : bond_generate_messages_py/fast
-
-# Convenience name for target.
-cv_camera/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : cv_camera/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: cv_camera/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make cv_camera/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
+bond_generate_messages_nodejs/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build.make cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build
+.PHONY : bond_generate_messages_nodejs/fast
 
 # Convenience name for target.
 cv_camera/CMakeFiles/clean_test_results_cv_camera.dir/rule:
@@ -404,6 +359,21 @@ nodelet_generate_messages_eus: cv_camera/CMakeFiles/nodelet_generate_messages_eu
 nodelet_generate_messages_eus/fast:
 	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/nodelet_generate_messages_eus.dir/build.make cv_camera/CMakeFiles/nodelet_generate_messages_eus.dir/build
 .PHONY : nodelet_generate_messages_eus/fast
+
+# Convenience name for target.
+cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+.PHONY : cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_cpp: cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+.PHONY : nodelet_generate_messages_cpp
+
+# fast build rule for target.
+nodelet_generate_messages_cpp/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+.PHONY : nodelet_generate_messages_cpp/fast
 
 # Convenience name for target.
 cv_camera/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
@@ -496,21 +466,6 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-cv_camera/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : cv_camera/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: cv_camera/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make cv_camera/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
 cv_camera/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : cv_camera/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
@@ -526,124 +481,34 @@ sensor_msgs_generate_messages_nodejs/fast:
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-.PHONY : cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+cv_camera/CMakeFiles/cv_camera_nodelet.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/cv_camera_nodelet.dir/rule
+.PHONY : cv_camera/CMakeFiles/cv_camera_nodelet.dir/rule
 
 # Convenience name for target.
-nodelet_generate_messages_cpp: cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+cv_camera_nodelet: cv_camera/CMakeFiles/cv_camera_nodelet.dir/rule
 
-.PHONY : nodelet_generate_messages_cpp
+.PHONY : cv_camera_nodelet
 
 # fast build rule for target.
-nodelet_generate_messages_cpp/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/build
-.PHONY : nodelet_generate_messages_cpp/fast
+cv_camera_nodelet/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/cv_camera_nodelet.dir/build.make cv_camera/CMakeFiles/cv_camera_nodelet.dir/build
+.PHONY : cv_camera_nodelet/fast
 
 # Convenience name for target.
-cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/rule
-.PHONY : cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/rule
+cv_camera/CMakeFiles/test_cv_camera.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/test_cv_camera.dir/rule
+.PHONY : cv_camera/CMakeFiles/test_cv_camera.dir/rule
 
 # Convenience name for target.
-run_tests_cv_camera_rostest_test_cv_camera.test: cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/rule
+test_cv_camera: cv_camera/CMakeFiles/test_cv_camera.dir/rule
 
-.PHONY : run_tests_cv_camera_rostest_test_cv_camera.test
+.PHONY : test_cv_camera
 
 # fast build rule for target.
-run_tests_cv_camera_rostest_test_cv_camera.test/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/build.make cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_cv_camera.test.dir/build
-.PHONY : run_tests_cv_camera_rostest_test_cv_camera.test/fast
-
-# Convenience name for target.
-cv_camera/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : cv_camera/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: cv_camera/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make cv_camera/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-.PHONY : cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_lisp: cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-
-.PHONY : nodelet_generate_messages_lisp
-
-# fast build rule for target.
-nodelet_generate_messages_lisp/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/build
-.PHONY : nodelet_generate_messages_lisp/fast
-
-# Convenience name for target.
-cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-.PHONY : cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_nodejs: cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-
-.PHONY : bond_generate_messages_nodejs
-
-# fast build rule for target.
-bond_generate_messages_nodejs/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build.make cv_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build
-.PHONY : bond_generate_messages_nodejs/fast
-
-# Convenience name for target.
-cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
-.PHONY : cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_nodejs: cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
-
-.PHONY : nodelet_generate_messages_nodejs
-
-# fast build rule for target.
-nodelet_generate_messages_nodejs/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make cv_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
-.PHONY : nodelet_generate_messages_nodejs/fast
-
-# Convenience name for target.
-cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/rule
-.PHONY : cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_py: cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/rule
-
-.PHONY : nodelet_generate_messages_py
-
-# fast build rule for target.
-nodelet_generate_messages_py/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/build.make cv_camera/CMakeFiles/nodelet_generate_messages_py.dir/build
-.PHONY : nodelet_generate_messages_py/fast
-
-# Convenience name for target.
-cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/rule:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/rule
-.PHONY : cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_cpp: cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/rule
-
-.PHONY : bond_generate_messages_cpp
-
-# fast build rule for target.
-bond_generate_messages_cpp/fast:
-	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/build.make cv_camera/CMakeFiles/bond_generate_messages_cpp.dir/build
-.PHONY : bond_generate_messages_cpp/fast
+test_cv_camera/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/test_cv_camera.dir/build.make cv_camera/CMakeFiles/test_cv_camera.dir/build
+.PHONY : test_cv_camera/fast
 
 # Convenience name for target.
 cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/rule:
@@ -704,6 +569,66 @@ bond_generate_messages_lisp: cv_camera/CMakeFiles/bond_generate_messages_lisp.di
 bond_generate_messages_lisp/fast:
 	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/bond_generate_messages_lisp.dir/build.make cv_camera/CMakeFiles/bond_generate_messages_lisp.dir/build
 .PHONY : bond_generate_messages_lisp/fast
+
+# Convenience name for target.
+cv_camera/CMakeFiles/bond_generate_messages_py.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/bond_generate_messages_py.dir/rule
+.PHONY : cv_camera/CMakeFiles/bond_generate_messages_py.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_py: cv_camera/CMakeFiles/bond_generate_messages_py.dir/rule
+
+.PHONY : bond_generate_messages_py
+
+# fast build rule for target.
+bond_generate_messages_py/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/bond_generate_messages_py.dir/build.make cv_camera/CMakeFiles/bond_generate_messages_py.dir/build
+.PHONY : bond_generate_messages_py/fast
+
+# Convenience name for target.
+cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/rule
+.PHONY : cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/rule
+
+# Convenience name for target.
+_run_tests_cv_camera_rostest_test_no_yaml.test: cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/rule
+
+.PHONY : _run_tests_cv_camera_rostest_test_no_yaml.test
+
+# fast build rule for target.
+_run_tests_cv_camera_rostest_test_no_yaml.test/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/build.make cv_camera/CMakeFiles/_run_tests_cv_camera_rostest_test_no_yaml.test.dir/build
+.PHONY : _run_tests_cv_camera_rostest_test_no_yaml.test/fast
+
+# Convenience name for target.
+cv_camera/CMakeFiles/roslint_cv_camera.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/roslint_cv_camera.dir/rule
+.PHONY : cv_camera/CMakeFiles/roslint_cv_camera.dir/rule
+
+# Convenience name for target.
+roslint_cv_camera: cv_camera/CMakeFiles/roslint_cv_camera.dir/rule
+
+.PHONY : roslint_cv_camera
+
+# fast build rule for target.
+roslint_cv_camera/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/roslint_cv_camera.dir/build.make cv_camera/CMakeFiles/roslint_cv_camera.dir/build
+.PHONY : roslint_cv_camera/fast
+
+# Convenience name for target.
+cv_camera/CMakeFiles/cv_camera_node.dir/rule:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/cv_camera_node.dir/rule
+.PHONY : cv_camera/CMakeFiles/cv_camera_node.dir/rule
+
+# Convenience name for target.
+cv_camera_node: cv_camera/CMakeFiles/cv_camera_node.dir/rule
+
+.PHONY : cv_camera_node
+
+# fast build rule for target.
+cv_camera_node/fast:
+	cd /home/zer0/AGV_ws/build && $(MAKE) -f cv_camera/CMakeFiles/cv_camera_node.dir/build.make cv_camera/CMakeFiles/cv_camera_node.dir/build
+.PHONY : cv_camera_node/fast
 
 src/capture.o: src/capture.cpp.o
 
@@ -881,19 +806,18 @@ help:
 	@echo "... _run_tests_cv_camera_rostest"
 	@echo "... run_tests_cv_camera_rostest"
 	@echo "... _run_tests_cv_camera"
-	@echo "... cv_camera_node"
-	@echo "... test_cv_camera"
-	@echo "... cv_camera_nodelet"
+	@echo "... nodelet_generate_messages_py"
+	@echo "... bond_generate_messages_cpp"
 	@echo "... install/strip"
 	@echo "... cv_camera"
-	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... _run_tests_cv_camera_rostest_test_no_yaml.test"
-	@echo "... roslint_cv_camera"
-	@echo "... bond_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... install"
+	@echo "... nodelet_generate_messages_nodejs"
+	@echo "... run_tests_cv_camera_rostest_test_cv_camera.test"
+	@echo "... nodelet_generate_messages_lisp"
+	@echo "... bond_generate_messages_nodejs"
 	@echo "... clean_test_results_cv_camera"
 	@echo "... nodelet_generate_messages_eus"
+	@echo "... nodelet_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... run_tests_cv_camera_rostest_test_no_yaml.test"
@@ -901,21 +825,17 @@ help:
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... list_install_components"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... nodelet_generate_messages_cpp"
-	@echo "... run_tests_cv_camera_rostest_test_cv_camera.test"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... nodelet_generate_messages_lisp"
-	@echo "... bond_generate_messages_nodejs"
-	@echo "... install"
-	@echo "... nodelet_generate_messages_nodejs"
-	@echo "... nodelet_generate_messages_py"
-	@echo "... bond_generate_messages_cpp"
+	@echo "... cv_camera_nodelet"
+	@echo "... test_cv_camera"
 	@echo "... test_cv_camera_no_yaml"
 	@echo "... roslint"
 	@echo "... bond_generate_messages_eus"
 	@echo "... bond_generate_messages_lisp"
+	@echo "... bond_generate_messages_py"
+	@echo "... _run_tests_cv_camera_rostest_test_no_yaml.test"
+	@echo "... roslint_cv_camera"
+	@echo "... cv_camera_node"
 	@echo "... src/capture.o"
 	@echo "... src/capture.i"
 	@echo "... src/capture.s"
