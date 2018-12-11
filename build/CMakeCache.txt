@@ -461,7 +461,7 @@ UBUNTU_XENIAL:BOOL=TRUE
 VISP_CONFIG_PATH:PATH=/opt/ros/kinetic/lib/x86_64-linux-gnu/cmake/visp
 
 //The directory containing a CMake configuration file for VISP.
-VISP_DIR:PATH=/opt/ros/kinetic/lib/x86_64-linux-gnu/cmake/visp
+VISP_DIR:PATH=VISP_DIR-NOTFOUND
 
 //Path to a file.
 _file_name:FILEPATH=/home/zer0/AGV_ws/src/image_pipeline/image_proc/test/test_rectify.xml
@@ -693,7 +693,7 @@ image_view_LIB_DEPENDS:STATIC=general;/opt/ros/kinetic/lib/libcamera_calibration
 image_view_SOURCE_DIR:STATIC=/home/zer0/AGV_ws/src/image_pipeline/image_view
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/librospack.so
+lib:FILEPATH=/opt/ros/kinetic/lib/libmessage_filters.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
@@ -1036,7 +1036,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

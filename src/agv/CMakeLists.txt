@@ -68,7 +68,9 @@ add_action_files(
    DIRECTORY
    action
    FILES
-   target_pose.action
+   target.action
+   turn.action
+   go_straight.action
  )
 
 ## Generate added messages and services with any dependencies listed here
