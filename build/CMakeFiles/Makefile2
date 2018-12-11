@@ -257,12 +257,12 @@ gtest/preinstall: gtest/gtest/preinstall
 gtest/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=34 "Built target gmock"
 .PHONY : gtest/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gmock.dir/rule
@@ -289,12 +289,12 @@ clean: gtest/CMakeFiles/gmock.dir/clean
 gtest/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=35,36 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=35 "Built target gmock_main"
 .PHONY : gtest/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gmock_main.dir/rule
@@ -340,12 +340,12 @@ gtest/gtest/preinstall:
 gtest/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=36 "Built target gtest"
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/gtest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/rule
@@ -372,7 +372,7 @@ clean: gtest/gtest/CMakeFiles/gtest.dir/clean
 gtest/gtest/CMakeFiles/gtest_main.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=37 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target gtest_main"
 .PHONY : gtest/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -455,7 +455,7 @@ clean: apriltags2_ros/apriltags2/CMakeFiles/_catkin_empty_exported_target.dir/cl
 apriltags2_ros/apriltags2/CMakeFiles/apriltags2.dir/all:
 	$(MAKE) -f apriltags2_ros/apriltags2/CMakeFiles/apriltags2.dir/build.make apriltags2_ros/apriltags2/CMakeFiles/apriltags2.dir/depend
 	$(MAKE) -f apriltags2_ros/apriltags2/CMakeFiles/apriltags2.dir/build.make apriltags2_ros/apriltags2/CMakeFiles/apriltags2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19 "Built target apriltags2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18 "Built target apriltags2"
 .PHONY : apriltags2_ros/apriltags2/CMakeFiles/apriltags2.dir/all
 
 # Include target in all.
@@ -465,7 +465,7 @@ all: apriltags2_ros/apriltags2/CMakeFiles/apriltags2.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags2_ros/apriltags2/CMakeFiles/apriltags2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags2_ros/apriltags2/CMakeFiles/apriltags2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : apriltags2_ros/apriltags2/CMakeFiles/apriltags2.dir/rule
@@ -1041,7 +1041,7 @@ clean: my_visp_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 my_visp_test/CMakeFiles/test_visp.dir/all:
 	$(MAKE) -f my_visp_test/CMakeFiles/test_visp.dir/build.make my_visp_test/CMakeFiles/test_visp.dir/depend
 	$(MAKE) -f my_visp_test/CMakeFiles/test_visp.dir/build.make my_visp_test/CMakeFiles/test_visp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=52 "Built target test_visp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target test_visp"
 .PHONY : my_visp_test/CMakeFiles/test_visp.dir/all
 
 # Include target in all.
@@ -1051,7 +1051,7 @@ all: my_visp_test/CMakeFiles/test_visp.dir/all
 
 # Build rule for subdir invocation for target.
 my_visp_test/CMakeFiles/test_visp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 my_visp_test/CMakeFiles/test_visp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : my_visp_test/CMakeFiles/test_visp.dir/rule
@@ -1459,11 +1459,13 @@ clean: image_pipeline/camera_calibration/CMakeFiles/run_tests_camera_calibration
 # Directory level rules for directory agv
 
 # Convenience name for "all" pass in the directory.
+agv/all: agv/CMakeFiles/target_pub.dir/all
 agv/all: agv/CMakeFiles/agv_generate_messages.dir/all
 
 .PHONY : agv/all
 
 # Convenience name for "clean" pass in the directory.
+agv/clean: agv/CMakeFiles/target_pub.dir/clean
 agv/clean: agv/CMakeFiles/agv_genpy.dir/clean
 agv/clean: agv/CMakeFiles/agv_generate_messages_py.dir/clean
 agv/clean: agv/CMakeFiles/agv_generate_messages_eus.dir/clean
@@ -1509,6 +1511,43 @@ agv/clean: agv/CMakeFiles/_agv_generate_messages_check_deps_target_poseActionFee
 agv/preinstall:
 
 .PHONY : agv/preinstall
+
+#=============================================================================
+# Target rules for target agv/CMakeFiles/target_pub.dir
+
+# All Build rule for target.
+agv/CMakeFiles/target_pub.dir/all:
+	$(MAKE) -f agv/CMakeFiles/target_pub.dir/build.make agv/CMakeFiles/target_pub.dir/depend
+	$(MAKE) -f agv/CMakeFiles/target_pub.dir/build.make agv/CMakeFiles/target_pub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=51 "Built target target_pub"
+.PHONY : agv/CMakeFiles/target_pub.dir/all
+
+# Include target in all.
+all: agv/CMakeFiles/target_pub.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+agv/CMakeFiles/target_pub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 agv/CMakeFiles/target_pub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+.PHONY : agv/CMakeFiles/target_pub.dir/rule
+
+# Convenience name for target.
+target_pub: agv/CMakeFiles/target_pub.dir/rule
+
+.PHONY : target_pub
+
+# clean rule for target.
+agv/CMakeFiles/target_pub.dir/clean:
+	$(MAKE) -f agv/CMakeFiles/target_pub.dir/build.make agv/CMakeFiles/target_pub.dir/clean
+.PHONY : agv/CMakeFiles/target_pub.dir/clean
+
+# clean rule for target.
+clean: agv/CMakeFiles/target_pub.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target agv/CMakeFiles/agv_genpy.dir
@@ -2910,7 +2949,7 @@ cv_camera/CMakeFiles/run_tests_cv_camera_rostest.dir/all: cv_camera/CMakeFiles/r
 
 # Build rule for subdir invocation for target.
 cv_camera/CMakeFiles/run_tests_cv_camera_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/run_tests_cv_camera_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : cv_camera/CMakeFiles/run_tests_cv_camera_rostest.dir/rule
@@ -3363,7 +3402,7 @@ cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_no_yaml.test.dir/all: cv_c
 
 # Build rule for subdir invocation for target.
 cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_no_yaml.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_no_yaml.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : cv_camera/CMakeFiles/run_tests_cv_camera_rostest_test_no_yaml.test.dir/rule
@@ -3395,7 +3434,7 @@ cv_camera/CMakeFiles/run_tests_cv_camera.dir/all: cv_camera/CMakeFiles/run_tests
 
 # Build rule for subdir invocation for target.
 cv_camera/CMakeFiles/run_tests_cv_camera.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/run_tests_cv_camera.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : cv_camera/CMakeFiles/run_tests_cv_camera.dir/rule
@@ -3556,7 +3595,7 @@ cv_camera/CMakeFiles/test_cv_camera.dir/all: gtest/gtest/CMakeFiles/gtest.dir/al
 cv_camera/CMakeFiles/test_cv_camera.dir/all: cv_camera/CMakeFiles/cv_camera.dir/all
 	$(MAKE) -f cv_camera/CMakeFiles/test_cv_camera.dir/build.make cv_camera/CMakeFiles/test_cv_camera.dir/depend
 	$(MAKE) -f cv_camera/CMakeFiles/test_cv_camera.dir/build.make cv_camera/CMakeFiles/test_cv_camera.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=51 "Built target test_cv_camera"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target test_cv_camera"
 .PHONY : cv_camera/CMakeFiles/test_cv_camera.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3589,12 +3628,12 @@ cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/all: gtest/gtest/CMakeFiles/gtes
 cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/all: cv_camera/CMakeFiles/cv_camera.dir/all
 	$(MAKE) -f cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/build.make cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/depend
 	$(MAKE) -f cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/build.make cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target test_cv_camera_no_yaml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=52 "Built target test_cv_camera_no_yaml"
 .PHONY : cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/all
 
 # Build rule for subdir invocation for target.
 cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/rule
@@ -4021,7 +4060,7 @@ all: image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/rule
@@ -4181,7 +4220,7 @@ clean: image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir/clean
 image_pipeline/image_proc/CMakeFiles/image_proc.dir/all: image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir/all
 	$(MAKE) -f image_pipeline/image_proc/CMakeFiles/image_proc.dir/build.make image_pipeline/image_proc/CMakeFiles/image_proc.dir/depend
 	$(MAKE) -f image_pipeline/image_proc/CMakeFiles/image_proc.dir/build.make image_pipeline/image_proc/CMakeFiles/image_proc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=38,39 "Built target image_proc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=37,38,39 "Built target image_proc"
 .PHONY : image_pipeline/image_proc/CMakeFiles/image_proc.dir/all
 
 # Include target in all.
@@ -4191,7 +4230,7 @@ all: image_pipeline/image_proc/CMakeFiles/image_proc.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_proc/CMakeFiles/image_proc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/CMakeFiles/image_proc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_proc/CMakeFiles/image_proc.dir/rule
@@ -4339,7 +4378,7 @@ clean: image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc.dir/clean
 image_pipeline/image_proc/test/CMakeFiles/image_proc_test_rectify.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f image_pipeline/image_proc/test/CMakeFiles/image_proc_test_rectify.dir/build.make image_pipeline/image_proc/test/CMakeFiles/image_proc_test_rectify.dir/depend
 	$(MAKE) -f image_pipeline/image_proc/test/CMakeFiles/image_proc_test_rectify.dir/build.make image_pipeline/image_proc/test/CMakeFiles/image_proc_test_rectify.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=42 "Built target image_proc_test_rectify"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target image_proc_test_rectify"
 .PHONY : image_pipeline/image_proc/test/CMakeFiles/image_proc_test_rectify.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4523,7 +4562,7 @@ image_pipeline/image_publisher/preinstall:
 image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/all:
 	$(MAKE) -f image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/build.make image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/depend
 	$(MAKE) -f image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/build.make image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target image_publisher_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=43 "Built target image_publisher_gencfg"
 .PHONY : image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/all
 
 # Include target in all.
@@ -4533,7 +4572,7 @@ all: image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/rule
@@ -4560,7 +4599,7 @@ clean: image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/clea
 image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/all: image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/all
 	$(MAKE) -f image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/build.make image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/depend
 	$(MAKE) -f image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/build.make image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target image_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=42 "Built target image_publisher"
 .PHONY : image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/all
 
 # Include target in all.
@@ -4570,7 +4609,7 @@ all: image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/rule
@@ -4597,7 +4636,7 @@ clean: image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/clean
 image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/all:
 	$(MAKE) -f image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/build.make image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/depend
 	$(MAKE) -f image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/build.make image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=43 "Built target image_publisher_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target image_publisher_exe"
 .PHONY : image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/all
 
 # Include target in all.
@@ -4607,7 +4646,7 @@ all: image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/rule
@@ -4804,7 +4843,7 @@ clean: image_pipeline/image_view/CMakeFiles/stereo_msgs_generate_messages_eus.di
 image_pipeline/image_view/CMakeFiles/video_recorder.dir/all:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/video_recorder.dir/build.make image_pipeline/image_view/CMakeFiles/video_recorder.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/video_recorder.dir/build.make image_pipeline/image_view/CMakeFiles/video_recorder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target video_recorder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=56 "Built target video_recorder"
 .PHONY : image_pipeline/image_view/CMakeFiles/video_recorder.dir/all
 
 # Include target in all.
@@ -4814,7 +4853,7 @@ all: image_pipeline/image_view/CMakeFiles/video_recorder.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_view/CMakeFiles/video_recorder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_view/CMakeFiles/video_recorder.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_view/CMakeFiles/video_recorder.dir/rule
@@ -4969,7 +5008,7 @@ clean: image_pipeline/image_view/CMakeFiles/std_srvs_generate_messages_py.dir/cl
 image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/all:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/build.make image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/build.make image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target image_view_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=47 "Built target image_view_gencfg"
 .PHONY : image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/all
 
 # Include target in all.
@@ -4979,7 +5018,7 @@ all: image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/rule
@@ -5006,7 +5045,7 @@ clean: image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/clean
 image_pipeline/image_view/CMakeFiles/extract_images.dir/all:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/extract_images.dir/build.make image_pipeline/image_view/CMakeFiles/extract_images.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/extract_images.dir/build.make image_pipeline/image_view/CMakeFiles/extract_images.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=34 "Built target extract_images"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target extract_images"
 .PHONY : image_pipeline/image_view/CMakeFiles/extract_images.dir/all
 
 # Include target in all.
@@ -5016,7 +5055,7 @@ all: image_pipeline/image_view/CMakeFiles/extract_images.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_view/CMakeFiles/extract_images.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_view/CMakeFiles/extract_images.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_view/CMakeFiles/extract_images.dir/rule
@@ -5149,7 +5188,7 @@ clean: image_pipeline/image_view/CMakeFiles/image_saver.dir/clean
 image_pipeline/image_view/CMakeFiles/image_view_exe.dir/all: image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/all
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_view_exe.dir/build.make image_pipeline/image_view/CMakeFiles/image_view_exe.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_view_exe.dir/build.make image_pipeline/image_view/CMakeFiles/image_view_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=47 "Built target image_view_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target image_view_exe"
 .PHONY : image_pipeline/image_view/CMakeFiles/image_view_exe.dir/all
 
 # Include target in all.
@@ -5255,7 +5294,7 @@ clean: image_pipeline/image_view/CMakeFiles/std_srvs_generate_messages_eus.dir/c
 image_pipeline/image_view/CMakeFiles/stereo_view.dir/all:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/stereo_view.dir/build.make image_pipeline/image_view/CMakeFiles/stereo_view.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/stereo_view.dir/build.make image_pipeline/image_view/CMakeFiles/stereo_view.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=50 "Built target stereo_view"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target stereo_view"
 .PHONY : image_pipeline/image_view/CMakeFiles/stereo_view.dir/all
 
 # Include target in all.
@@ -5265,7 +5304,7 @@ all: image_pipeline/image_view/CMakeFiles/stereo_view.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_view/CMakeFiles/stereo_view.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_view/CMakeFiles/stereo_view.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_view/CMakeFiles/stereo_view.dir/rule
@@ -5314,7 +5353,7 @@ image_pipeline/stereo_image_proc/preinstall:
 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/all:
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/depend
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target stereo_image_proc_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=49 "Built target stereo_image_proc_gencfg"
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/all
 
 # Include target in all.
@@ -5324,7 +5363,7 @@ all: image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/al
 
 # Build rule for subdir invocation for target.
 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/rule
@@ -5352,7 +5391,7 @@ image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all: image_pip
 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all: image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/all
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/depend
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=49 "Built target stereo_image_proc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=48 "Built target stereo_image_proc"
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
 
 # Include target in all.
@@ -5362,7 +5401,7 @@ all: image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/rule
@@ -5390,7 +5429,7 @@ image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all: image_p
 image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all: image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/depend
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target stereoimageproc_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=50 "Built target stereoimageproc_exe"
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all
 
 # Include target in all.
@@ -5400,7 +5439,7 @@ all: image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/rule
@@ -5543,7 +5582,7 @@ all: apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_single_image_server
 
 # Build rule for subdir invocation for target.
 apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_single_image_server_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_single_image_server_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_single_image_server_node.dir/rule
@@ -5573,7 +5612,7 @@ apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_continuous_node.dir/all:
 apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_continuous_node.dir/all: apriltags2_ros/apriltags2_ros/CMakeFiles/common.dir/all
 	$(MAKE) -f apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_continuous_node.dir/build.make apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_continuous_node.dir/depend
 	$(MAKE) -f apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_continuous_node.dir/build.make apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_continuous_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target apriltags2_ros_continuous_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=19 "Built target apriltags2_ros_continuous_node"
 .PHONY : apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_continuous_node.dir/all
 
 # Include target in all.
@@ -5659,7 +5698,7 @@ all: apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_single_image_client
 
 # Build rule for subdir invocation for target.
 apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_single_image_client_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_single_image_client_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : apriltags2_ros/apriltags2_ros/CMakeFiles/apriltags2_ros_single_image_client_node.dir/rule
@@ -5994,7 +6033,7 @@ all: apriltags2_ros/apriltags2_ros/CMakeFiles/continuous_detector.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags2_ros/apriltags2_ros/CMakeFiles/continuous_detector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags2_ros/apriltags2_ros/CMakeFiles/continuous_detector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : apriltags2_ros/apriltags2_ros/CMakeFiles/continuous_detector.dir/rule
@@ -6308,7 +6347,7 @@ all: apriltags2_ros/apriltags2_ros/CMakeFiles/common.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags2_ros/apriltags2_ros/CMakeFiles/common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags2_ros/apriltags2_ros/CMakeFiles/common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : apriltags2_ros/apriltags2_ros/CMakeFiles/common.dir/rule
@@ -6368,7 +6407,7 @@ apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/all: apriltag
 apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/all: apriltags2_ros/apriltags2_ros/CMakeFiles/common.dir/all
 	$(MAKE) -f apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/build.make apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/depend
 	$(MAKE) -f apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/build.make apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=48 "Built target single_image_detector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target single_image_detector"
 .PHONY : apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/all
 
 # Include target in all.
@@ -6378,7 +6417,7 @@ all: apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : apriltags2_ros/apriltags2_ros/CMakeFiles/single_image_detector.dir/rule
@@ -6464,7 +6503,7 @@ clean: image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/clean
 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/all: image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/all
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/depend
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=44 "Built target image_rotate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target image_rotate"
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/all
 
 # Include target in all.
@@ -6474,7 +6513,7 @@ all: image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/rule
@@ -6501,7 +6540,7 @@ clean: image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/clean
 image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/all:
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/depend
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target image_rotate_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=44 "Built target image_rotate_exe"
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/all
 
 # Include target in all.
@@ -6511,7 +6550,7 @@ all: image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/rule
@@ -6558,7 +6597,7 @@ usb_cam/preinstall:
 usb_cam/CMakeFiles/usb_cam.dir/all:
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/depend
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target usb_cam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=55 "Built target usb_cam"
 .PHONY : usb_cam/CMakeFiles/usb_cam.dir/all
 
 # Include target in all.
@@ -6568,7 +6607,7 @@ all: usb_cam/CMakeFiles/usb_cam.dir/all
 
 # Build rule for subdir invocation for target.
 usb_cam/CMakeFiles/usb_cam.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 usb_cam/CMakeFiles/usb_cam.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : usb_cam/CMakeFiles/usb_cam.dir/rule
@@ -6595,7 +6634,7 @@ clean: usb_cam/CMakeFiles/usb_cam.dir/clean
 usb_cam/CMakeFiles/usb_cam_node.dir/all: usb_cam/CMakeFiles/usb_cam.dir/all
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam_node.dir/build.make usb_cam/CMakeFiles/usb_cam_node.dir/depend
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam_node.dir/build.make usb_cam/CMakeFiles/usb_cam_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=55 "Built target usb_cam_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target usb_cam_node"
 .PHONY : usb_cam/CMakeFiles/usb_cam_node.dir/all
 
 # Include target in all.
@@ -6845,12 +6884,12 @@ vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_cpp.dir/all: vision_visp/visp_camera_calibration/CMakeFiles/_visp_camera_calibration_generate_messages_check_deps_calibrate.dir/all
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_cpp.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_cpp.dir/depend
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_cpp.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=62,63 "Built target visp_camera_calibration_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=63 "Built target visp_camera_calibration_generate_messages_cpp"
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_cpp.dir/rule
@@ -6994,7 +7033,7 @@ all: vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_gene
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages.dir/rule
@@ -7026,7 +7065,7 @@ vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_gencpp.di
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_gencpp.dir/rule
@@ -7348,7 +7387,7 @@ clean: vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_ge
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_common.dir/all: vision_visp/visp_bridge/CMakeFiles/visp_bridge.dir/all
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_common.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_common.dir/depend
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_common.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target visp_camera_calibration_common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=62 "Built target visp_camera_calibration_common"
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_common.dir/all
 
 # Include target in all.
@@ -7358,7 +7397,7 @@ all: vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_comm
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_common.dir/rule
@@ -7412,7 +7451,7 @@ vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_image_pro
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_image_processing.dir/all: vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_common.dir/all
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_image_processing.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_image_processing.dir/depend
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_image_processing.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_image_processing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target visp_camera_calibration_image_processing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=71 "Built target visp_camera_calibration_image_processing"
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_image_processing.dir/all
 
 # Include target in all.
@@ -7422,7 +7461,7 @@ all: vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_imag
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_image_processing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_image_processing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_image_processing.dir/rule
@@ -7633,7 +7672,7 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_genno
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gennodejs.dir/rule
@@ -7698,12 +7737,12 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gener
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_lisp.dir/all: vision_visp/visp_hand2eye_calibration/CMakeFiles/_visp_hand2eye_calibration_generate_messages_check_deps_compute_effector_camera_quick.dir/all
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_lisp.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_lisp.dir/depend
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_lisp.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=76 "Built target visp_hand2eye_calibration_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=76,77 "Built target visp_hand2eye_calibration_generate_messages_lisp"
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_lisp.dir/rule
@@ -7741,7 +7780,7 @@ all: vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/rule
@@ -7838,12 +7877,12 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gener
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_nodejs.dir/all: vision_visp/visp_hand2eye_calibration/CMakeFiles/_visp_hand2eye_calibration_generate_messages_check_deps_compute_effector_camera_quick.dir/all
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_nodejs.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_nodejs.dir/depend
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_nodejs.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=77,78 "Built target visp_hand2eye_calibration_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=78 "Built target visp_hand2eye_calibration_generate_messages_nodejs"
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_nodejs.dir/rule
@@ -8012,7 +8051,7 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_genli
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_genlisp.dir/rule
@@ -8176,7 +8215,7 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calib
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/all: vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/all
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/depend
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=71 "Built target visp_hand2eye_calibration_calibrator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target visp_hand2eye_calibration_calibrator"
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/all
 
 # Include target in all.
@@ -8252,7 +8291,7 @@ all: vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/rule
@@ -8305,7 +8344,7 @@ visp_ros/preinstall:
 visp_ros/CMakeFiles/visp_ros_afma6_node.dir/all: vision_visp/visp_bridge/CMakeFiles/visp_bridge.dir/all
 	$(MAKE) -f visp_ros/CMakeFiles/visp_ros_afma6_node.dir/build.make visp_ros/CMakeFiles/visp_ros_afma6_node.dir/depend
 	$(MAKE) -f visp_ros/CMakeFiles/visp_ros_afma6_node.dir/build.make visp_ros/CMakeFiles/visp_ros_afma6_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=81 "Built target visp_ros_afma6_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num= "Built target visp_ros_afma6_node"
 .PHONY : visp_ros/CMakeFiles/visp_ros_afma6_node.dir/all
 
 # Include target in all.
@@ -8315,7 +8354,7 @@ all: visp_ros/CMakeFiles/visp_ros_afma6_node.dir/all
 
 # Build rule for subdir invocation for target.
 visp_ros/CMakeFiles/visp_ros_afma6_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 visp_ros/CMakeFiles/visp_ros_afma6_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : visp_ros/CMakeFiles/visp_ros_afma6_node.dir/rule
@@ -8387,7 +8426,7 @@ visp_ros/CMakeFiles/visp_ros.dir/all: apriltags2_ros/apriltags2_ros/CMakeFiles/t
 visp_ros/CMakeFiles/visp_ros.dir/all: vision_visp/visp_bridge/CMakeFiles/visp_bridge.dir/all
 	$(MAKE) -f visp_ros/CMakeFiles/visp_ros.dir/build.make visp_ros/CMakeFiles/visp_ros.dir/depend
 	$(MAKE) -f visp_ros/CMakeFiles/visp_ros.dir/build.make visp_ros/CMakeFiles/visp_ros.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=80 "Built target visp_ros"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=80,81 "Built target visp_ros"
 .PHONY : visp_ros/CMakeFiles/visp_ros.dir/all
 
 # Include target in all.
@@ -8397,7 +8436,7 @@ all: visp_ros/CMakeFiles/visp_ros.dir/all
 
 # Build rule for subdir invocation for target.
 visp_ros/CMakeFiles/visp_ros.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 visp_ros/CMakeFiles/visp_ros.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : visp_ros/CMakeFiles/visp_ros.dir/rule
@@ -8947,7 +8986,7 @@ all: vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule
@@ -9497,7 +9536,7 @@ all: vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule
@@ -9585,7 +9624,7 @@ vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/all: vision_visp/
 vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/all: vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/all
 	$(MAKE) -f vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/build.make vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/depend
 	$(MAKE) -f vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/build.make vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=56,57 "Built target visp_auto_tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=57 "Built target visp_auto_tracker"
 .PHONY : vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/all
 
 # Include target in all.
@@ -9636,7 +9675,7 @@ all: vision_visp/visp_auto_tracker/CMakeFiles/auto_tracker.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_auto_tracker/CMakeFiles/auto_tracker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_auto_tracker/CMakeFiles/auto_tracker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_auto_tracker/CMakeFiles/auto_tracker.dir/rule
@@ -9676,7 +9715,7 @@ all: vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 22
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/rule

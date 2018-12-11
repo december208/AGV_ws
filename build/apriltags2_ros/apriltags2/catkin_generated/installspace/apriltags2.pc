@@ -1,8 +1,0 @@
-prefix=/home/zer0/AGV_ws/install
-
-Name: apriltags2
-Description: Description of apriltags2
-Version: 0.9.8
-Cflags: -I/home/zer0/AGV_ws/install/include
-Libs: -L/home/zer0/AGV_ws/install/lib -lapriltags2
-Requires: 

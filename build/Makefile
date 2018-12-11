@@ -660,6 +660,19 @@ run_tests_camera_calibration_nosetests_test.multiple_boards.py/fast:
 .PHONY : run_tests_camera_calibration_nosetests_test.multiple_boards.py/fast
 
 #=============================================================================
+# Target rules for targets named target_pub
+
+# Build rule for target.
+target_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 target_pub
+.PHONY : target_pub
+
+# fast build rule for target.
+target_pub/fast:
+	$(MAKE) -f agv/CMakeFiles/target_pub.dir/build.make agv/CMakeFiles/target_pub.dir/build
+.PHONY : target_pub/fast
+
+#=============================================================================
 # Target rules for targets named agv_genpy
 
 # Build rule for target.
@@ -3531,6 +3544,7 @@ help:
 	@echo "... run_tests_camera_calibration"
 	@echo "... multi_board_calibration.tar.gz"
 	@echo "... run_tests_camera_calibration_nosetests_test.multiple_boards.py"
+	@echo "... target_pub"
 	@echo "... agv_genpy"
 	@echo "... agv_generate_messages_py"
 	@echo "... agv_generate_messages_eus"
