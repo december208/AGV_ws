@@ -3,7 +3,9 @@ project(agv)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
-
+if(CMAKE_COMPILER_IS_GNUCXX)
+    add_definitions(-std=gnu++0x)
+endif()
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -12,8 +14,10 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   tf2
   tf2_ros
+  tf2_geometry_msgs
   genmsg
   actionlib_msgs
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -142,6 +146,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(target_pub src/target_pub.cpp)
+add_executable(target_server src/target_server.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -155,6 +160,9 @@ add_executable(target_pub src/target_pub.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(target_pub
+   ${catkin_LIBRARIES}
+)
+target_link_libraries(target_server
    ${catkin_LIBRARIES}
 )
 

@@ -246,12 +246,12 @@ gtest/preinstall: gtest/gtest/preinstall
 gtest/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=90,91 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=88,89,90 "Built target gmock"
 .PHONY : gtest/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gmock.dir/rule
@@ -278,12 +278,12 @@ clean: gtest/CMakeFiles/gmock.dir/clean
 gtest/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=92,93,94,95 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=91,92,93 "Built target gmock_main"
 .PHONY : gtest/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gmock_main.dir/rule
@@ -329,12 +329,12 @@ gtest/gtest/preinstall:
 gtest/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=96 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=94,95 "Built target gtest"
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/gtest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/rule
@@ -361,7 +361,7 @@ clean: gtest/gtest/CMakeFiles/gtest.dir/clean
 gtest/gtest/CMakeFiles/gtest_main.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=97,98 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=96 "Built target gtest_main"
 .PHONY : gtest/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -391,6 +391,7 @@ clean: gtest/gtest/CMakeFiles/gtest_main.dir/clean
 
 # Convenience name for "all" pass in the directory.
 agv/all: agv/CMakeFiles/target_pub.dir/all
+agv/all: agv/CMakeFiles/target_server.dir/all
 agv/all: agv/CMakeFiles/agv_generate_messages.dir/all
 
 .PHONY : agv/all
@@ -405,6 +406,7 @@ agv/clean: agv/CMakeFiles/agv_genlisp.dir/clean
 agv/clean: agv/CMakeFiles/agv_geneus.dir/clean
 agv/clean: agv/CMakeFiles/agv_gencpp.dir/clean
 agv/clean: agv/CMakeFiles/agv_generate_messages_cpp.dir/clean
+agv/clean: agv/CMakeFiles/target_server.dir/clean
 agv/clean: agv/CMakeFiles/agv_generate_messages_lisp.dir/clean
 agv/clean: agv/CMakeFiles/_agv_generate_messages_check_deps_turnAction.dir/clean
 agv/clean: agv/CMakeFiles/_agv_generate_messages_check_deps_turnActionResult.dir/clean
@@ -480,7 +482,7 @@ agv/preinstall:
 agv/CMakeFiles/target_pub.dir/all:
 	$(MAKE) -f agv/CMakeFiles/target_pub.dir/build.make agv/CMakeFiles/target_pub.dir/depend
 	$(MAKE) -f agv/CMakeFiles/target_pub.dir/build.make agv/CMakeFiles/target_pub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=99,100 "Built target target_pub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=97,98 "Built target target_pub"
 .PHONY : agv/CMakeFiles/target_pub.dir/all
 
 # Include target in all.
@@ -540,12 +542,12 @@ agv/CMakeFiles/agv_generate_messages_py.dir/all: agv/CMakeFiles/_agv_generate_me
 agv/CMakeFiles/agv_generate_messages_py.dir/all: agv/CMakeFiles/_agv_generate_messages_check_deps_targetGoal.dir/all
 	$(MAKE) -f agv/CMakeFiles/agv_generate_messages_py.dir/build.make agv/CMakeFiles/agv_generate_messages_py.dir/depend
 	$(MAKE) -f agv/CMakeFiles/agv_generate_messages_py.dir/build.make agv/CMakeFiles/agv_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89 "Built target agv_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 "Built target agv_generate_messages_py"
 .PHONY : agv/CMakeFiles/agv_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 agv/CMakeFiles/agv_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 agv/CMakeFiles/agv_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : agv/CMakeFiles/agv_generate_messages_py.dir/rule
@@ -627,7 +629,7 @@ agv/CMakeFiles/agv_generate_messages_nodejs.dir/all: agv/CMakeFiles/actionlib_ms
 agv/CMakeFiles/agv_generate_messages_nodejs.dir/all: agv/CMakeFiles/_agv_generate_messages_check_deps_targetGoal.dir/all
 	$(MAKE) -f agv/CMakeFiles/agv_generate_messages_nodejs.dir/build.make agv/CMakeFiles/agv_generate_messages_nodejs.dir/depend
 	$(MAKE) -f agv/CMakeFiles/agv_generate_messages_nodejs.dir/build.make agv/CMakeFiles/agv_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70 "Built target agv_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Built target agv_generate_messages_nodejs"
 .PHONY : agv/CMakeFiles/agv_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -664,7 +666,7 @@ agv/CMakeFiles/agv_genpy.dir/all: agv/CMakeFiles/agv_generate_messages_py.dir/al
 
 # Build rule for subdir invocation for target.
 agv/CMakeFiles/agv_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 agv/CMakeFiles/agv_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : agv/CMakeFiles/agv_genpy.dir/rule
@@ -696,7 +698,7 @@ agv/CMakeFiles/agv_genlisp.dir/all: agv/CMakeFiles/agv_generate_messages_lisp.di
 
 # Build rule for subdir invocation for target.
 agv/CMakeFiles/agv_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 agv/CMakeFiles/agv_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : agv/CMakeFiles/agv_genlisp.dir/rule
@@ -836,6 +838,43 @@ clean: agv/CMakeFiles/agv_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target agv/CMakeFiles/target_server.dir
+
+# All Build rule for target.
+agv/CMakeFiles/target_server.dir/all:
+	$(MAKE) -f agv/CMakeFiles/target_server.dir/build.make agv/CMakeFiles/target_server.dir/depend
+	$(MAKE) -f agv/CMakeFiles/target_server.dir/build.make agv/CMakeFiles/target_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=99,100 "Built target target_server"
+.PHONY : agv/CMakeFiles/target_server.dir/all
+
+# Include target in all.
+all: agv/CMakeFiles/target_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+agv/CMakeFiles/target_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 agv/CMakeFiles/target_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
+.PHONY : agv/CMakeFiles/target_server.dir/rule
+
+# Convenience name for target.
+target_server: agv/CMakeFiles/target_server.dir/rule
+
+.PHONY : target_server
+
+# clean rule for target.
+agv/CMakeFiles/target_server.dir/clean:
+	$(MAKE) -f agv/CMakeFiles/target_server.dir/build.make agv/CMakeFiles/target_server.dir/clean
+.PHONY : agv/CMakeFiles/target_server.dir/clean
+
+# clean rule for target.
+clean: agv/CMakeFiles/target_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target agv/CMakeFiles/agv_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -865,12 +904,12 @@ agv/CMakeFiles/agv_generate_messages_lisp.dir/all: agv/CMakeFiles/_agv_generate_
 agv/CMakeFiles/agv_generate_messages_lisp.dir/all: agv/CMakeFiles/_agv_generate_messages_check_deps_targetGoal.dir/all
 	$(MAKE) -f agv/CMakeFiles/agv_generate_messages_lisp.dir/build.make agv/CMakeFiles/agv_generate_messages_lisp.dir/depend
 	$(MAKE) -f agv/CMakeFiles/agv_generate_messages_lisp.dir/build.make agv/CMakeFiles/agv_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53 "Built target agv_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zer0/AGV_ws/build/CMakeFiles --progress-num=36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52 "Built target agv_generate_messages_lisp"
 .PHONY : agv/CMakeFiles/agv_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 agv/CMakeFiles/agv_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 agv/CMakeFiles/agv_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : agv/CMakeFiles/agv_generate_messages_lisp.dir/rule
@@ -2630,7 +2669,7 @@ all: agv/CMakeFiles/agv_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 agv/CMakeFiles/agv_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 89
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 87
 	$(MAKE) -f CMakeFiles/Makefile2 agv/CMakeFiles/agv_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zer0/AGV_ws/build/CMakeFiles 0
 .PHONY : agv/CMakeFiles/agv_generate_messages.dir/rule

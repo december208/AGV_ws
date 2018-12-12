@@ -11,13 +11,13 @@
 #include <tf2/transform_datatypes.h>
 #include <tf2/LinearMath/Transform.h>
 #include <math.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 
 typedef actionlib::SimpleActionServer<agv::targetAction> Server;
-tf2_ros::Buffer tfBuffer;
-tf2_ros::TransformListener tfListener(tfBuffer);
 ros::Publisher cmd_pub;
 geometry_msgs::TransformStamped targetTF;
 tf2::Stamped<tf2::Transform> targetTF2;
+//tf2::Transform targetTF2;
 
 double getYaw(){
   double r,p,y;
@@ -35,6 +35,8 @@ double getRemainDist(){
 
 void execute(const agv::targetGoalConstPtr& goal, Server* as)  
 { 
+  static tf2_ros::Buffer tfBuffer;
+  static tf2_ros::TransformListener tfListener(tfBuffer);
   ros::Rate rate(40);
   ROS_INFO("Rotating!");
   double angle=0;
@@ -51,12 +53,19 @@ void execute(const agv::targetGoalConstPtr& goal, Server* as)
   std_msgs::String cmd_vel;
 
   while(ros::ok()){
+    if(as->isPreemptRequested()){
+      cmd_vel.data = "q";
+      cmd_pub.publish(cmd_vel);
+      ROS_INFO("Preempted!");
+      as->setPreempted();
+      return;
+    }
     try{
       targetTF = tfBuffer.lookupTransform("robot","target",ros::Time(0));
     }
     catch(tf2::TransformException &ex){
       ROS_WARN("%s",ex.what());
-      ros::Duration(0.5).sleep();
+      ros::Duration(2.0).sleep();
       continue;
     }
     degError = getYaw();

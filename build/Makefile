@@ -400,6 +400,19 @@ agv_generate_messages_cpp/fast:
 .PHONY : agv_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named target_server
+
+# Build rule for target.
+target_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 target_server
+.PHONY : target_server
+
+# fast build rule for target.
+target_server/fast:
+	$(MAKE) -f agv/CMakeFiles/target_server.dir/build.make agv/CMakeFiles/target_server.dir/build
+.PHONY : target_server/fast
+
+#=============================================================================
 # Target rules for targets named agv_generate_messages_lisp
 
 # Build rule for target.
@@ -1210,6 +1223,7 @@ help:
 	@echo "... agv_geneus"
 	@echo "... agv_gencpp"
 	@echo "... agv_generate_messages_cpp"
+	@echo "... target_server"
 	@echo "... agv_generate_messages_lisp"
 	@echo "... _agv_generate_messages_check_deps_turnAction"
 	@echo "... _agv_generate_messages_check_deps_turnActionResult"
