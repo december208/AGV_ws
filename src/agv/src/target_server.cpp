@@ -17,18 +17,21 @@ typedef actionlib::SimpleActionServer<agv::targetAction> Server;
 ros::Publisher cmd_pub;
 geometry_msgs::TransformStamped targetTF;
 tf2::Stamped<tf2::Transform> targetTF2;
-//tf2::Transform targetTF2;
 
-double getYaw(){
-  double r,p,y;
-  tf2::fromMsg(targetTF,targetTF2);
-  targetTF2.getBasis().getRPY(r,p,y);
-  return y*57.2957795;
+double getRemainDeg(){
+  double dx, dy, dTheta;
+  dx = targetTF.transform.translation.x;
+  dy = targetTF.transform.translation.y;
+  dTheta = atan2(dy,dx);
+
+  return dTheta*57.2957795;
 }
 double getRemainDist(){
   double dx,dy;
+  
   dx = targetTF.transform.translation.x;
   dy = targetTF.transform.translation.y;
+  
   return sqrt(dx*dx+dy*dy)*1000.0;
 
 }
@@ -37,11 +40,11 @@ void execute(const agv::targetGoalConstPtr& goal, Server* as)
 { 
   static tf2_ros::Buffer tfBuffer;
   static tf2_ros::TransformListener tfListener(tfBuffer);
-  ros::Rate rate(40);
+  ros::Rate rate(20);
   ROS_INFO("Rotating!");
   double angle=0;
-  double degTolerance = 3.0;
-  double distTolerance = 2.0;
+  double degTolerance = 5.0;
+  double distTolerance = 5.0;
   double degError=0;
   double distError=0;
   int rotateSpeedCmd=0;
@@ -53,8 +56,9 @@ void execute(const agv::targetGoalConstPtr& goal, Server* as)
   std_msgs::String cmd_vel;
 
   while(ros::ok()){
+    rate.sleep();
     if(as->isPreemptRequested()){
-      cmd_vel.data = "q";
+      cmd_vel.data = "0q";
       cmd_pub.publish(cmd_vel);
       ROS_INFO("Preempted!");
       as->setPreempted();
@@ -68,14 +72,16 @@ void execute(const agv::targetGoalConstPtr& goal, Server* as)
       ros::Duration(2.0).sleep();
       continue;
     }
-    degError = getYaw();
+    degError = getRemainDeg();
+    ROS_INFO("%f\n", degError);
     if(fabs(degError)>degTolerance){
       rotateSpeedCmd = (int)fabs(degError/180.0*10);
       if((rotateSpeedCmd-curRotateSpeed)>2) rotateSpeedCmd = curRotateSpeed+2;
-      if(degError>0) moveCmd = 'd';
-      else moveCmd = 'a';
+      if(degError>0) moveCmd = 'a';
+      else moveCmd = 'd';
       cmd_vel.data = std::to_string(rotateSpeedCmd)+moveCmd;
       cmd_pub.publish(cmd_vel);
+      curRotateSpeed = rotateSpeedCmd;
       continue;
     }
     distError = getRemainDist();
@@ -87,13 +93,14 @@ void execute(const agv::targetGoalConstPtr& goal, Server* as)
         if((speedCmd-curSpeed)>2) speedCmd = curSpeed+1;
         cmd_vel.data = std::to_string(speedCmd)+"w";
         cmd_pub.publish(cmd_vel);
+        curSpeed = speedCmd;
         continue;
     }
     else{
       cmd_vel.data = "q";
       cmd_pub.publish(cmd_vel);
       break;
-    } 
+    }
   }
   
   as->setSucceeded();
@@ -103,7 +110,7 @@ int main(int argc, char** argv)
 {
   ros::init(argc, argv, "target_server");
   ros::NodeHandle n;
-  cmd_pub = n.advertise<std_msgs::String>("vel_cmd",1);
+  cmd_pub = n.advertise<std_msgs::String>("cmd_vel",1);
   Server server(n, "targetAction", boost::bind(&execute, _1, &server), false);
   server.start();
   ros::spin();

@@ -1,2 +1,2 @@
-agv
+agv:apriltags2_ros/apriltags2:apriltags2_ros/apriltags2_ros:usb_cam
 -DCATKIN_DEVEL_PREFIX=/home/zer0/AGV_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zer0/AGV_ws/install -G Unix Makefiles

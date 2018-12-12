@@ -1,0 +1,2 @@
+set(agv_MESSAGE_FILES "/home/zer0/AGV_ws/devel/share/agv/msg/targetAction.msg;/home/zer0/AGV_ws/devel/share/agv/msg/targetActionGoal.msg;/home/zer0/AGV_ws/devel/share/agv/msg/targetActionResult.msg;/home/zer0/AGV_ws/devel/share/agv/msg/targetActionFeedback.msg;/home/zer0/AGV_ws/devel/share/agv/msg/targetGoal.msg;/home/zer0/AGV_ws/devel/share/agv/msg/targetResult.msg;/home/zer0/AGV_ws/devel/share/agv/msg/targetFeedback.msg")
+set(agv_SERVICE_FILES "")

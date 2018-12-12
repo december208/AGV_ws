@@ -73,8 +73,6 @@ add_action_files(
    action
    FILES
    target.action
-   turn.action
-   go_straight.action
  )
 
 ## Generate added messages and services with any dependencies listed here
@@ -147,7 +145,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(target_pub src/target_pub.cpp)
 add_executable(target_server src/target_server.cpp)
-
+add_executable(target_client src/target_client.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -163,6 +161,9 @@ target_link_libraries(target_pub
    ${catkin_LIBRARIES}
 )
 target_link_libraries(target_server
+   ${catkin_LIBRARIES}
+)
+target_link_libraries(target_client
    ${catkin_LIBRARIES}
 )
 
